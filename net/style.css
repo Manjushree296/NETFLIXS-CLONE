@@ -1,0 +1,258 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(lastb.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.logo{
+    height: 40px;
+    width: 150px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.del{
+    color: white;
+    border:1px solid gray;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 6px;
+    margin-left: 600px;
+}
+
+.sign{
+    border-radius: 5px;
+    padding: 6px;
+    background-color: red;
+    color: white;
+    margin-left: 1px;
+}
+
+
+.mid h1{
+    text-align: center;
+    color: white;
+    margin-top: 160px;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.mid p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.mid h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input{
+    border: 1px solid gray;
+    background-color: black;
+    color: whitesmoke;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 190px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 25%;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.but1{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-color: red;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-top: 10px;
+    
+}
+input::placeholder{
+    font-size: 15px;
+}
+
+.first{
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    color: white;
+    display: flex;
+    border-bottom: 7px solid rgb(51, 50, 50);
+}
+
+.text1{
+    padding-top: 150px;
+    padding-left: 40px;
+}
+
+.text1 h1{
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.text1 h4{
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.second{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+    border-bottom: 6px solid rgb(59, 57, 57);
+}
+
+.second h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+.acc{
+    width: 100%;
+    max-width: 750px;
+    margin: 60px auto;
+}
+
+.acc  li{
+    width: 100%;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.acc li label{
+    font-size: 18px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(69, 68, 68);
+    margin-bottom: 2px;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 50px;
+    right: 30px;
+    position: absolute;
+    transition: trasform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.acc .content{
+    background-color: rgb(90, 89, 89);
+    text-align: left;
+    padding:0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.acc input[type='radio']:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 40px;
+}
+
+.acc input[type='radio']:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+.thi{
+     padding-bottom: 40px;
+}
+
+.foot p{
+    margin-left: 120px;
+}
+.foot{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: rgb(186, 179, 179);
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+}
+
+.foot1{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.foot1 ul li{
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.del1{
+    background-color: transparent;
+    color: white;
+    display: inline;
+    margin-top: 60px;
+    margin-left: 120px;
+    border: 1px solid white;
+    padding-right: 0px;
+    margin-right: 0px;
+    padding: 2px;
+    margin-bottom: 30px;
+}
+
+.last{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: gray;
+    margin-top: 20px;
+}
